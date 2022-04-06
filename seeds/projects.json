@@ -1,0 +1,14 @@
+[
+    {
+      "title": "Idea1",
+      "description": "description"
+    },
+    {
+      "title": "Idea2",
+      "description": "description"
+    },
+    {
+      "title": "Build a Working Chess Game",
+      "description": "This is likely the most involved project on this list. Think about all the rules of chess; now think about coding them into a single web application! A game with this many variables with require complex algorithms and calculation. Creating your own chess game will give you hands-on experience in"
+    }
+  ]
