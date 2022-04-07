@@ -8,7 +8,7 @@ router.post("/", withAuth, (req, res) => {
   Team.create({
     
   })
-
+})
 router.put("/:id", withAuth, (req, res) => {
   Team.update(req.body, {
     where: {
