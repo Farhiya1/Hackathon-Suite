@@ -26,14 +26,21 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [4],
+        len: [8],
+      },
+      bio: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          len: [350],
+        },
       },
     },
   },
   {
     hooks: {
       async beforeCreate(newUserData) {
-        newUserData.password = await bcrypt.hash(newUserData.password, 10);
+        newUserData.password = await bcrypt.hash(newUserData.password, 15);
         return newUserData;
       },
 

@@ -1,29 +1,37 @@
 [
   {
     "username": "Salbot",
-    "password": "password12345"
+    "password": "password12345",
+    "bio": "Junior fullstack developer currently studying at the University of Birmingham"
   },
   {
     "username": "MiaKoow",
-    "password": "password12345"
+    "password": "password12345",
+    "bio": "Junior fullstack developer currently studying at the University of Birmingham"
   },
   {
     "username": "TeslaDazzler",
-    "password": "password12345"
+    "password": "password12345",
+    "bio": "Junior fullstack developer currently studying at the University of Birmingham"
   },
   {
     "username": "TheBackup",
-    "password": "password12345"
+    "password": "password12345",
+    "bio": "Junior fullstack developer currently studying at the University of Birmingham"
   },
   {
     "username": "Kpoow",
-    "password": "password12345"
-  }, {
+    "password": "password12345",
+    "bio": "Junior fullstack developer currently studying at the University of Birmingham"
+  },
+  {
     "username": "Anonymous",
-    "password": "password12345"
+    "password": "password12345",
+    "bio": "Junior fullstack developer currently studying at the University of Birmingham"
   },
   {
     "username": "MichaelTheKing",
-    "password": "password12345"
+    "password": "password12345",
+    "bio": "Junior fullstack developer currently studying at the University of Birmingham"
   }
 ]
