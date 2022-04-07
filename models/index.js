@@ -1,22 +1,26 @@
-const User = require("./User");
-const Post = require("./Post");
-const Comment = require("./Comment");
+const Project = require('./Project')
+const Team = require('./Team')
+const User = require('./User')
 
-// Creating sequlized associations
+User.belongsTo(Team, {
+    foreignKey:'team_id',
+    onDelete: 'CASCADE'
+})
 
-Post.belongsTo(User, {
-  foreignKey: "userId",
-  onDelete: "CASCADE",
-});
+Team.hasMany(User, {
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE'
 
-Post.hasMany(Comment, {
-  foreignKey: "postId",
-  onDelete: "CASCADE",
-});
+})
+Team.hasOne(Project,{
+    foreignKey: 'project_id',
+    onDelete: 'CASCADE'
+})
 
-Comment.belongsTo(User, {
-  foreignKey: "userId",
-  onDelete: "CASCADE",
-});
+Project.hasOne(Team, {
+    foreignKey: 'team_id',
+    onDelete: 'CASCADE'
+})
 
-module.exports = { User, Comment, Post };
+
+module.exports = {Project, User, Team}
