@@ -34,13 +34,6 @@ Project.init(
                 model: 'team',
                 key: 'id',
             },
-        startup_id:{
-            type: DataTypes.INTEGER,
-            references:{
-                model: 'startup',
-                key: 'id'
-            }
-        }
         },
     },
      {
