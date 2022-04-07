@@ -37,6 +37,14 @@ User.init(
         isEmail: true,
       },
     },
+    team_id: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'Team',
+        key: 'id'
+      }
+    },
     bio: {
       type: DataTypes.STRING,
       allowNull: false,
