@@ -4,11 +4,13 @@ const { User } = require("../../models");
 router.post("/", (req, res) => {
   User.create({
     username: req.body.username,
+    email: req.body.email,
     password: req.body.password,
   })
     .then((userDataDB) => {
       req.session.save(() => {
         req.session.userId = userDataDB.id;
+        req.session.email = userDataDB.email;
         req.session.username = userDataDB.username;
         req.session.loggedIn = true;
 

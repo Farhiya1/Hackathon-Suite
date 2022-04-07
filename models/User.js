@@ -28,15 +28,24 @@ User.init(
       validate: {
         len: [8],
       },
-      bio: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-          len: [350],
-        },
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      validate: {
+        isEmail: true,
+      },
+    },
+    bio: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [350],
       },
     },
   },
+
   {
     hooks: {
       async beforeCreate(newUserData) {
