@@ -6,6 +6,7 @@ router.post("/", (req, res) => {
     username: req.body.username,
     email: req.body.email,
     password: req.body.password,
+    bio: req.body.bio,
   })
     .then((userDataDB) => {
       req.session.save(() => {
