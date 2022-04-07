@@ -1,8 +1,12 @@
 const router = require("express").Router();
-const { Post } = require("../models");
+const { Post, User } = require("../models");
 const withAuth = require("../utils/auth");
 
-router.get("/", withAuth, (req, res) => {
+router.get("/", withAuth, async (req, res) => {
+  const { bio } = (await User.findByPk(req.session.userId)).get({plain: true})
+
+  console.log("I am the bio: ", bio)
+
   Post.findAll({
     where: {
       userId: req.session.userId,
@@ -25,6 +29,7 @@ router.get("/", withAuth, (req, res) => {
 router.get("/new", withAuth, (req, res) => {
   res.render("new-post", {
     layout: "dashboard",
+    bio
   });
 });
 
