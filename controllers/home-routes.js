@@ -1,19 +1,26 @@
 const router = require("express").Router();
-const { Post, Comment, User } = require("../models");
+const { Project, User, Team } = require("../models");
 
 // Get all posts for the homepage
 router.get("/", (req, res) => {
-  Post.findAll({
-    include: [User],
-  }) // Serialize data so the template can read it
-    .then((postDBData) => {
-      const posts = postDBData.map((post) => post.get({ plain: true }));
-
-      res.render("all-posts", { posts });
-    })
-    .catch((err) => {
-      res.status(500).json(err);
+  Project.findAll({
+    limit: 3,
+    include: [Team],
+    where: {
+      team_id: null,
+    }
+  }
+  ) // Serialize  data so the template can read it
+    .then((projectDBData) => {
+      const projects = projectDBData.map((project) =>
+        project.get({ plain: true })
+      );
+      console.log(projects);
+      res.render("all-posts", { projects });
     });
+  // .catch((err) => {
+  //   res.status(500).json(err);
+  // });
 });
 
 // Get single post
