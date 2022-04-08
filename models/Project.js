@@ -38,6 +38,10 @@ Project.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    max_developers: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    }
   },
 
   {
