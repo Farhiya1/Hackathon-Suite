@@ -7,6 +7,8 @@ User.belongsTo(Team, {
     onDelete: 'CASCADE'
 })
 
+
+
 Team.hasMany(User, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE'
