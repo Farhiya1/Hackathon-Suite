@@ -13,6 +13,11 @@ const seedDatabase = async () => {
     returning: true,
   });
 
+  const projects = await Project.bulkCreate(projectData, {
+    individualHooks: true,
+    returning: true,
+  });
+
   process.exit(0);
 };
 

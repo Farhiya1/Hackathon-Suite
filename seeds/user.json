@@ -1,35 +1,42 @@
 [
   {
+    "email": "salbot12@gmail.com",
     "username": "Salbot",
     "password": "password12345",
     "bio": "Junior fullstack developer currently studying at the University of Birmingham"
   },
   {
+    "email": "Miak@gmail.com",
     "username": "MiaKoow",
     "password": "password12345",
     "bio": "Junior fullstack developer currently studying at the University of Birmingham"
   },
   {
+    "email": "Teslad@gmail.com",
     "username": "TeslaDazzler",
     "password": "password12345",
     "bio": "Junior fullstack developer currently studying at the University of Birmingham"
   },
   {
+    "email": "thebackup1@gmail.com",
     "username": "TheBackup",
     "password": "password12345",
     "bio": "Junior fullstack developer currently studying at the University of Birmingham"
   },
   {
+    "email": "kpow@gmail.com",
     "username": "Kpoow",
     "password": "password12345",
     "bio": "Junior fullstack developer currently studying at the University of Birmingham"
   },
   {
+    "email": "annonymous@gmail.com",
     "username": "Anonymous",
     "password": "password12345",
     "bio": "Junior fullstack developer currently studying at the University of Birmingham"
   },
   {
+    "email": "michaelK@gmail.com",
     "username": "MichaelTheKing",
     "password": "password12345",
     "bio": "Junior fullstack developer currently studying at the University of Birmingham"
