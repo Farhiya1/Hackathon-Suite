@@ -33,7 +33,7 @@ Project.init(
         model: "team",
         key: "id",
       },
-    },
+      },
     startup: {
       type: DataTypes.STRING,
       allowNull: false,

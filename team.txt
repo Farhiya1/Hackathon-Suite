@@ -1,0 +1,20 @@
+Front end
+Button (join a project)
+The btn will hold the following info - Max developers for the project
+if it's the  1st usert
+when the user clicks the Button
+a team name is randomly generated
+the user_id from sessions is sent in a object
+
+Back-end
+
+the 1st user is a post - creates team and team name
+2nd user on it's an update - simply adds more users 
+
+
+Find a way to keep track of how many users join a project
+ option 1 - whenever you create a team, you include the model project and find syntact to remove one developers
+  
+  Everytime the same project (which you will have to access by id) receives another user, it deletes a developer 
+  findOneandUpdate
+
