@@ -18,6 +18,12 @@ const seedDatabase = async () => {
     returning: true,
   });
 
+  const team = await Team.bulkCreate(teamsData, {
+    individualHooks: true,
+    returning: true,
+  });
+
+
   process.exit(0);
 };
 
