@@ -2,15 +2,14 @@ const router = require("express").Router();
 const { User, Project, Team } = require("../../models");
 const withAuth = require("../../utils/auth");
 
-
 // identifying users within a team
-router.get('/:id', async (req, res) => {
+router.get("/:id", async (req, res) => {
   try {
     const teamData = await Team.findByPk(req.params.id, {
-      include: [{ model: User }]
+      include: [{ model: User }],
     });
     if (!teamData) {
-      res.status(404).json({ message: 'No member(s) are found with that id!' });
+      res.status(404).json({ message: "No member(s) are found with that id!" });
       return;
     }
     res.status(200).json(teamData);
@@ -19,15 +18,11 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-
-
 router.post("/", withAuth, (req, res) => {
   const body = req.body;
 
-  Team.create({
-    
-  })
-})
+  Team.create({});
+});
 router.put("/:id", withAuth, (req, res) => {
   Team.update(req.body, {
     where: {
@@ -48,7 +43,7 @@ router.put("/:id", withAuth, (req, res) => {
 
 // Deleting posts
 router.delete("/:id", withAuth, (req, res) => {
-  Post.destroy({
+  Project.destroy({
     where: {
       id: req.params.id,
     },
