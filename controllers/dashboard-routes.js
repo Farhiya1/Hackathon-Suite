@@ -3,15 +3,24 @@ const { Project, User, Team } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", withAuth, async (req, res) => {
-  const { bio } = (await User.findByPk(req.session.userId)).get({
-    plain: true,
-  });
+  const userData = await User.findByPk(req.session.userId, {
+    include: [{
+      model: Team
+    }]
+  })
 
-  console.log("I am the bio: ", bio);
+  const user = userData.get({plain: true})
 
-  Project.findAll({
+  console.log(user)
+
+  res.render("all-posts-admin", {
+    layout: "dashboard",
+    user
+  })
+
+  /* Project.findAll({
     where: {
-      id: req.session.id,
+      id: req.session.userId,
     },
   })
     .then((postDBData) => {
@@ -25,7 +34,7 @@ router.get("/", withAuth, async (req, res) => {
     .catch((err) => {
       console.log(err);
       res.redirect("login");
-    });
+    }); */
 });
 
 router.get("/new", withAuth, (req, res) => {

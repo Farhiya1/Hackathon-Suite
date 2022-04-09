@@ -21,8 +21,30 @@ router.get("/:id", async (req, res) => {
 router.post("/", withAuth, (req, res) => {
   const body = req.body;
 
-  Team.create({});
+  // Attempt to find existing team
+  const existingTeam = await Team.findOne({
+    where: { project_id: body.projectId }
+  });
+
+  let projectTeam;
+  if (!existingTeam) {
+    const newTeam = await Team.create({
+      name: 'Test',
+      project_id: body.project_id
+    });
+    projectTeam = newTeam;
+  } else {
+    projectTeam = existingTeam;
+  }
+
+  await User.update({
+    team_id: projectTeam.id
+  });
+
+  res.status(200).json(projectTeam.get({plain: true}));
 });
+
+
 router.put("/:id", withAuth, (req, res) => {
   Team.update(req.body, {
     where: {
