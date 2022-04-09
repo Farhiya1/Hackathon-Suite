@@ -13,6 +13,7 @@ router.post("/", (req, res) => {
         req.session.userId = userDataDB.id;
         req.session.email = userDataDB.email;
         req.session.username = userDataDB.username;
+        req.session.bio = userDataDB.bio;
         req.session.loggedIn = true;
 
         res.json(userDataDB);
