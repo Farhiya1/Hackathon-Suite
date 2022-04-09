@@ -4,41 +4,47 @@
     "description": "Integrating our mobile app with Mastercard payment platform",
     "start_date": "2022-05-01",
     "end_date": "2022-05-03",
-    "startup": "Swoopos - A mobile point of sales software"
+    "startup": "Swoopos - A mobile point of sales software",
+    "max_developers": "5"
   },
   {
     "title": "Crowd investment platform",
     "description": "To build backend for crowd investments",
     "start_date": "2022-06-02",
     "end_date": "2022-06-07",
-    "startup": "SyncdIn - Music tech platform"
+    "startup": "SyncdIn - Music tech platform",
+    "max_developers": "6"
   },
   {
     "title": "Build a booking form",
     "description": "You will be tasked to build a booking form to manage travel",
     "start_date": "2022-07-08",
     "end_date": "2022-07-09",
-    "startup": "click Travel - Corporate travel company"
+    "startup": "click Travel - Corporate travel company",
+    "max_developers": "6"
   },
   {
     "title": "Create an online food ordering platform",
     "description": "Building an online food ordering platform for local deliveries. Reference Just Eat ",
     "start_date": "2022-07-01",
     "end_date": "2022-07-14",
-    "startup": "Cocodistro - Grocery delivery service "
+    "startup": "Cocodistro - Grocery delivery service ",
+    "max_developers": "8"
   },
   {
     "title": "Build personalised sportswear",
     "description": "Full-stack: Allow users to design their own sportswear",
     "start_date": "2022-05-09",
     "end_date": "2022-05-16",
-    "startup": "Gymshark - Sportswear Retailer "
+    "startup": "Gymshark - Sportswear Retailer ",
+    "max_developers": "10"
   },
   {
     "title": "Build user interface for childrens book",
     "description": "Create user interface for interactive digital childrens book",
     "start_date": "2022-05-25",
     "end_date": "2022-05-27",
-    "startup": "KidsRUs"
+    "startup": "KidsRUs",
+    "max_developers": "5"
   }
 ]
