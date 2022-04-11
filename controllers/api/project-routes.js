@@ -1,15 +1,24 @@
 const router = require("express").Router();
-const { Comment } = require("../../models");
+const { Project, Team } = require("../../models");
 const withAuth = require("../../utils/auth");
 
-router.post("/", withAuth, (req, res) => {
-  Comment.create({ ...req.body, userId: req.session.userId })
-    .then((newComment) => {
-      res.json(newComment);
-    })
-    .catch((err) => {
-      res.status(500).json(err);
+
+router.get("/", (req, res) => {
+  Project.findAll({
+     include: [Team],
+    where: {
+      team_id: null,
+    },
+  }) 
+    .then((projectDBData) => {
+      const projects = projectDBData.map((project) =>
+        project.get({ plain: true })
+      );
+      console.log(projects);
+      res.render("all-posts", { projects });
     });
+ 
 });
+
 
 module.exports = router;
