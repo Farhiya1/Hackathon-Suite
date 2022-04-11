@@ -11,7 +11,8 @@
   },
   "scripts": {
     "start": "node server.js",
-    "seed": "node seeds/seed.js"
+    "seed": "node seeds/seed.js",
+    "nodemnon": "nodemon server.js"
   },
   "name": "tech-blog1",
   "description": "Model-View-Controller (MVC): Tech Blog",
