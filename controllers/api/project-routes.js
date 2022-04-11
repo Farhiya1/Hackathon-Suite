@@ -15,7 +15,7 @@ router.get("/", (req, res) => {
         project.get({ plain: true })
       );
       console.log(projects);
-      res.render("/project", { projects });
+      res.render("/all-posts", { projects });
     });
  
 });
