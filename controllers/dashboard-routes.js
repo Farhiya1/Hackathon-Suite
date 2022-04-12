@@ -3,20 +3,16 @@ const { Project, User, Team } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", withAuth, async (req, res) => {
-  const userData = await User.findByPk(req.session.userId, {
-    include: [{
-      model: Team
-    }]
-  })
+  const userData = await User.findByPk(req.session.userId);
 
-  const user = userData.get({plain: true})
+  const user = userData.get({ plain: true });
 
-  console.log(user)
+  console.log(user);
 
   res.render("all-posts-admin", {
     layout: "dashboard",
-    user
-  })
+    user,
+  });
 
   /* Project.findAll({
     where: {
