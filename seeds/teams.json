@@ -1,16 +1,12 @@
 [
     {
-      "teamName": "Tiny Coders",
-      "user_id": ["1", "2", "3"]
+      "teamName": "Tiny Coders"
     },
     {
-      "teamName": "That IT Team",
-      "user_id": ["4", "5", "6"]
+      "teamName": "That IT Team"
     },
     {
-      "teamName": "Fat Fingers",
-      "user_id": ["7"]
-
+      "teamName": "Fat Fingers"
     },
     {
       "teamName": "Boolean Hooligans"
