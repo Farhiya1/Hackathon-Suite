@@ -3,7 +3,8 @@ const { User, Project, Team } = require("../../models");
 const withAuth = require("../../utils/auth");
 
 // identifying users within a team
-router.get("/:id", async (req, res) => {
+router.post("/:id", async (req, res) => {
+  console.log("IT'S HITTING");
   try {
     const teamData = await Team.findByPk(req.params.id, {
       include: [{ model: User }],
@@ -18,19 +19,19 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.post("/", withAuth, async (req, res) => {
+router.post("/team", withAuth, async (req, res) => {
   const body = req.body;
 
   // Attempt to find existing team
   const existingTeam = await Team.findOne({
-    where: { project_id: body.projectId }
+    where: { project_id: body.projectId },
   });
 
   let projectTeam;
   if (!existingTeam) {
     const newTeam = await Team.create({
-      name: 'Test',
-      project_id: body.project_id
+      name: "Test",
+      project_id: body.project_id,
     });
     projectTeam = newTeam;
   } else {
@@ -38,12 +39,11 @@ router.post("/", withAuth, async (req, res) => {
   }
 
   await User.update({
-    team_id: projectTeam.id
+    team_id: projectTeam.id,
   });
 
-  res.status(200).json(projectTeam.get({plain: true}));
+  res.status(200).json(projectTeam.get({ plain: true }));
 });
-
 
 router.put("/:id", withAuth, (req, res) => {
   Team.update(req.body, {
