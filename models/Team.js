@@ -11,13 +11,25 @@ Team.init(
       primaryKey: true,
       autoIncrement: true,
     },
-
+    project_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "Project",
+        key: "id",
+      },
+    },
+    user_id: { type: DataTypes.INTEGER,
+      references: {
+        model: "User",
+        key: "id",
+      },
+    },
     teamName: {
       type: DataTypes.STRING,
       allowNull: false,
     },
   },
-  
+
   {
     sequelize,
     timestamps: false,
