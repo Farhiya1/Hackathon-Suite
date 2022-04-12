@@ -1,23 +1,15 @@
-// function joinProject () {
-//     fetch("/api/team", {
-//         method: "post",
-//         headers: { "Content-Type": "application/json" },
-//       })
-//         .then(function () {
-//           ;
-//         })
-//         .catch((err) => console.log(err));
-//     }
+const joinTeamButtons = document.querySelectorAll(".project-button");
 
-//     document.querySelector("#projectBtn").addEventListener("click", joinProject);
+joinTeamButtons.forEach((btn) => btn.addEventListener("click", joinProject));
 
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("project-button").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("POST", "/api/team", true);
-  xhttp.send();
+async function joinProject(e) {
+  const projectId = parseInt(e.target.value);
+
+  const response = await fetch("/api/team", {
+    method: "post",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      projectId,
+    }),
+  });
 }
