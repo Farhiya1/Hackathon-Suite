@@ -49,8 +49,7 @@ app.set("view engine", "handlebars");
 // Importing routes.
 app.use(require("./controllers/"));
 
-
 // Starting server.
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
-})
+});
