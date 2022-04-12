@@ -5,10 +5,6 @@ const { Project, User, Team } = require("../models");
 router.get("/", (req, res) => {
   Project.findAll({
     limit: 3,
-    include: [Team],
-    where: {
-      team_id: null,
-    },
   }) // Serialize  data so the template can read it
     .then((projectDBData) => {
       const projects = projectDBData.map((project) =>
