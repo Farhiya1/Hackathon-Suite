@@ -19,30 +19,32 @@ router.post("/:id", async (req, res) => {
   }
 });
 
-router.post("/team", withAuth, async (req, res) => {
+router.post("/", withAuth, async (req, res) => {
   const body = req.body;
 
-  // Attempt to find existing team
-  const existingTeam = await Team.findOne({
-    where: { project_id: body.projectId },
-  });
+  let existingTeam;
 
-  let projectTeam;
-  if (!existingTeam) {
-    const newTeam = await Team.create({
-      name: "Test",
-      project_id: body.project_id,
+  try {
+    existingTeam = await Team.findOne({
+      where: { project_id: body.projectId },
     });
-    projectTeam = newTeam;
-  } else {
-    projectTeam = existingTeam;
+  } catch (error) {
+    res.status(400).send(error.message);
   }
 
-  await User.update({
-    team_id: projectTeam.id,
-  });
+  const teamName = existingTeam
+    ? existingTeam.get({ plain: true }).teamName
+    : "random";
 
-  res.status(200).json(projectTeam.get({ plain: true }));
+  try {
+    const projectTeam = await Team.create({
+      teamName,
+      project_id: body.projectId,
+      user_id: req.session.userId,
+    });
+
+    res.status(200).json(projectTeam.get({ plain: true }));
+  } catch (error) {}
 });
 
 router.put("/:id", withAuth, (req, res) => {
