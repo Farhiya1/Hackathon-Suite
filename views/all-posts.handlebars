@@ -24,13 +24,15 @@
   {{/each}}
 </div> --}}
 
+<link rel="stylesheet" href="/stylesheet/dashboard-projects.css" type="css"/>
+
 <div class="card mb-3"  style="max-width: 740px;">
   {{#each projects}}
     <article class="card">
       <div class="card-header bg-light flex-row justify-space-between">
   <div class="row g-0">
     <div class="col-md-4">
-       <img src="../public/Image/login-image.jpg" class="img-fluid rounded-start" alt="...">
+       <img src="/Image/login-image.jpg" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-8">
         <h2>
@@ -48,7 +50,7 @@
       </div>
       <div class="card-body">
         {{body}}
-        <button type="button" class="project-button btn btn-primary" value="{{id}}">Join
+        <button type="button" class="btn btn-primary project-button" value="{{id}}">Join
           Project</button>
       </div>
     </article>
