@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
       const projects = projectDBData.map((project) =>
         project.get({ plain: true })
       );
-      console.log(projects);
+      // console.log(projects);
       res.render("all-posts", { projects });
     });
   // .catch((err) => {

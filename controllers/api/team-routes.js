@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { User, Project, Team } = require("../../models");
 const withAuth = require("../../utils/auth");
+const superheroes = require('superheroes')
 
 // identifying users within a team
 router.post("/:id", async (req, res) => {
@@ -32,9 +33,10 @@ router.post("/", withAuth, async (req, res) => {
     res.status(400).send(error.message);
   }
 
-  const teamName = existingTeam
+  const teamName = superheroes.random()
+  console.log(teamName)
     ? existingTeam.get({ plain: true }).teamName
-    : "random";
+    : teamName;
 
   try {
     const projectTeam = await Team.create({
