@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Tech Blog</title>
+    <title>Hackathon Suite</title>
     <link
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap"
       rel="stylesheet"
@@ -40,14 +40,26 @@
       <h1 class="app-title .text-black"><a href="/dashboard">Dashboard</a></h1>
     </header>
 
-    <div class="monster">
+    {{!-- <div class="monster">
       <img src="/Image/pink-monster.png" class="img-fluid rounded-start" alt="...">
-    </div>
+    </div> --}}
 
-    <main class="col-auto">
+    {{!-- <main class="col-auto">
+      {{{body}}} --}}
+      {{!-- <h2 class="bio">{{bio}}</h2>
+    </main> --}}
+
+     <main class="col-auto">
       {{{body}}}
-      <h2 class="bio">{{bio}}</h2>
-    </main>
+    <div class="card">
+    <img src="/Image/pink-monster.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">About</h5>
+      <p class="card-text"></p>
+      <main class="col-auto">
+      {{{body}}}
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
 
     <footer class="footer flex-row justify-center">
       <a href="/dashboard/new"> New Post</a>
