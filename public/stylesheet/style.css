@@ -65,13 +65,20 @@ hr {
 
 #login-btn{
   background-color: blueviolet;
+  border-radius: 25px;
   color: white;
 }
 #signup-btn{
   background-color: blueviolet;
+  border-radius: 25px;
   color: white;
 }
 .card-login {
   background-color: black;
   color: white;
+}
+
+.login-C{
+  margin-top: 9rem !important;
+  margin-left: 7rem !important;
 }
