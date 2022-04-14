@@ -1,28 +1,40 @@
-<div class="card" class="row text-center" style="height: 25rem;">
-  <div class="card-header">
-    <h2>Sign Up</h2>
+<div class="row text-center" style="height: 25rem;">
+<div class="col-sm-6 card-img">
+  <img src="/Image/login-image.jpg" alt="Login" style="width: 500px; height: 500px">
+</div>
+
+<div class="card-login" style="width: 35rem;">
+    <h2 class="text-center">Create new Account</h2>
+    <h8 class="text-center">Aleady Registered? <a href="/login">Login</a></h8>
+    <div class="card-header">
+    <div id="signup" role="tabpanel">
+  <form id="signup-form" class="card-body">
+  <div class="text-center">
+  <label for="username-input-signup" style="width: 18rem" class="text-left">Username</label>
+  <input type="text" id="username-input-signup" style="width: 18rem" placeholder="Username" />
   </div>
-  <div id="signup" role="tabpanel">
-    <form id="signup-form" class="card-body">
-      <div>
-        <label for="email-input-signup">Email</label>
-        <input type="text" id="email-input-signup" />
+  <br>
+  <div>
+  <div class="text-center">
+  <label for="email-input-signup" style="width: 18rem" class="text-left">Email</label>
+  </div>
+  <input type="text" id="email-input-signup" style="width: 18rem"/>
+  </div>
+   <br>      
+   <div>
+    <div class="text-center">
+    <label for="password-input-signup" style="width: 18rem" class="text-left">Password</label>
+    </div>
+        <input type="password" id="password-input-signup" placeholder="Minimum 8 characters" style="width: 18rem"/>
+    </div>
+    <br>
+      <div class="text-center">
+        <label for="bio-input-signup" style="width: 18rem" class="text-left">Bio</label>
+        <input type="text" id="bio-input-signup" style="width: 18rem; height: 5rem"/>
       </div>
-      <div>
-        <label for="username-input-signup">Username</label>
-        <input type="text" id="username-input-signup" />
-      </div>
-      <div>
-        <label for="password-input-signup">Password</label>
-        <input type="password" id="password-input-signup" placeholder="Minimum 8 characters"/>
-        
-      </div>
-      <div>
-        <label for="bio-input-signup">Bio</label>
-        <input type="text" id="bio-input-signup" />
-      </div>
-      <button type="submit" id="signup-btn" class="btn">Signup!</button>
-      <a href="/login">Login instead</a>
+      <br>
+      <button type="submit" id="signup-btn" style="width: 15rem; height: 3rem">Signup!</button>
+      
     </form>
   </div>
 </div>
