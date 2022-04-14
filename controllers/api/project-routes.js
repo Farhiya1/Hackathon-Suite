@@ -5,7 +5,7 @@ const withAuth = require("../../utils/auth");
 router.get("/", (req, res) => {
   console.log("/API/PROJECT ROUTE HIT")
   Project.findAll({
-    
+    include: [Team ]
   }).then((projectDBData) => {
     console.log(projectDBData, "FROM FIND ALL PROJECT")
     const projects = projectDBData.map((project) =>
