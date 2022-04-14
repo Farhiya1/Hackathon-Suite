@@ -91,9 +91,6 @@ hr {
   height: 75px;
 }
 
-.navbar-dash-toggler{
-  background: indigo !important;
-}
 
 .about-text{
   color: white;
@@ -139,4 +136,8 @@ hr {
   color: rgb(169, 89, 244);
   margin-left: 35px;
 }
+
+/* .navbar-nav{
+  margin-bottom: 20px;
+} */
 
