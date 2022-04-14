@@ -4,14 +4,15 @@ const { Project, User, Team } = require("../models");
 // Get all posts for the homepage
 router.get("/", (req, res) => {
   Project.findAll({
-    limit: 3,
+    limit: 2,
+    include: [Team]
   }) // Serialize  data so the template can read it
     .then((projectDBData) => {
       const projects = projectDBData.map((project) =>
         project.get({ plain: true })
       );
       // console.log(projects);
-      res.render("all-posts", { projects });
+      res.render("homeprojects", { projects });
     });
   // .catch((err) => {
   //   res.status(500).json(err);
