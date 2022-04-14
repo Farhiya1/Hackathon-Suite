@@ -94,3 +94,11 @@ hr {
 .navbar-dash-toggler{
   background: indigo !important;
 }
+
+.about-text{
+  color: white;
+}
+
+.bio-text{
+  color: black;
+}
