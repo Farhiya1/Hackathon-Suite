@@ -62,3 +62,16 @@ h4 {
 hr {
   color: white;
 }
+
+#login-btn{
+  background-color: blueviolet;
+  color: white;
+}
+#signup-btn{
+  background-color: blueviolet;
+  color: white;
+}
+.card-login {
+  background-color: black;
+  color: white;
+}
