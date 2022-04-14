@@ -15,26 +15,52 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="/stylesheet/dashboard-projects.css" type="css"/>
+    <link rel="stylesheet" href="/stylesheet/style.css" />
 
   </head>
 
   <body class="flex-column min-80-vh">
-    <nav class="navbar">
-      <ul class="flex-row">
-        <li class="li-inline list-unstyled nav-item"><a href="/">Home</a></li>
-        <li class="li-inline list-unstyled nav-item"><a
-            href="/dashboard"
-          >Dashboard</a></li>
-          <li class="li-inline list-unstyled nav-item"><a
-            href="/api/project"
-          >Projects</a></li>
-        <li class="li-inline list-unstyled nav-item"><a
-        <li class="li-inline list-unstyled nav-item"><a
-            href="#"
-            id="logout-link"
-          >Logout</a></li>
-      </ul>
+      <nav
+      class="navbar-dash navbar-expand-lg navbar-light bg-light shadow-lg p-3 mb-5 bg-white fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand"> </a>
+        <button
+          class="navbar-dash-toggler"
+          type="button"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a
+                class="nav-link text-white"
+                href="/"
+              >Home</a></li>
+            <li class="nav-item"><a
+                class="nav-link text-white"
+                href="/dashboard"
+              >Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/api/project">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="#"
+                id="logout-link"
+              >Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <header class="hero">
       <h1 class="app-title .text-black"><a href="/dashboard">Dashboard</a></h1>
