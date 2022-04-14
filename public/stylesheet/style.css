@@ -42,7 +42,7 @@ body {
   background: black;
   padding: 20px;
   width: 270px;
-  height: 10rem;
+  height: 15rem;
 }
 
 .startup-name {
@@ -105,12 +105,9 @@ hr {
   height: 75px;
 }
 
-<<<<<<< HEAD
-=======
 .navbar-dash-toggler {
   background: indigo !important;
 }
->>>>>>> 799fdd0f43a2fc93c83976954ab4bc50580cb815
 
 .about-text {
   color: white;
@@ -180,11 +177,3 @@ footer {
   color: rgb(169, 89, 244);
   margin-left: 35px;
 }
-<<<<<<< HEAD
-
-/* .navbar-nav{
-  margin-bottom: 20px;
-} */
-
-=======
->>>>>>> 799fdd0f43a2fc93c83976954ab4bc50580cb815
