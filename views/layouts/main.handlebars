@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hackathon Suite</title>
 
-    {{!-- Stylesheet links --}}
+    {{! Stylesheet links }}
     <link
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap"
       rel="stylesheet"
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/stylesheet/style.css" />
   </head>
 
-  {{!-- Navbar section --}}
+  {{! Navbar section }}
   <body class="flex-column min-80-vh background">
     <nav
       class="navbar navbar-expand-lg navbar-light bg-light shadow-lg p-3 mb-5 bg-white fixed-top"
@@ -67,17 +67,33 @@
     <header class="hero text-center">
     </header>
 
-    {{!-- Renders body text to the page --}}
+    {{! Renders body text to the page }}
     <main class="col-auto">
       {{{body}}}
     </main>
     <br />
-    <footer class="flex-row justify-center">
-      &copy; Jarfa Tech
+    <footer class="col-md-8 text-white text-center static">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h5>Contact</h5>
+          </div>
+          <div class="col-sm">
+            <h5>Address</h5>
+          </div>
+          <div class="col-sm">
+            <h5>
+              <a
+                class="email text-white"
+                href="mailto:hackathonsuite@gmail.com"
+              >Email or call</a></h5>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 
-  {{!-- Javascript links --}}
+  {{! Javascript links }}
   <script src="/javascript/logout.js"></script>
   <script src="/javascript/project.js"></script>
   <script src="/javascript/homeprojects.js"></script>

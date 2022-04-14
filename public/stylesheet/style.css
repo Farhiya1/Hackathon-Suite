@@ -11,13 +11,17 @@ body {
   background: indigo !important;
 }
 
+.navbar .nav-link {
+  float: right;
+}
+
 .project-button {
   background-color: blueviolet !important;
   border-radius: 25px;
   width: 270px;
   height: 50px;
 }
-.dash-proj{
+.dash-proj {
   margin-top: 9rem !important;
 }
 
@@ -25,14 +29,20 @@ body {
   margin: 0 auto; /* Added */
   float: none; /* Added */
   margin-bottom: 10px; /* Added */
+  display: inline-block;
+  justify-content: space-around;
+  /* height: 300px; */
 }
 
+.mb3 {
+  margin-left: 30px;
+}
 .img-fluid {
   border-radius: 25px;
   background: black;
   padding: 20px;
   width: 270px;
-  height: 200px;
+  height: 10rem;
 }
 
 .startup-name {
@@ -48,6 +58,10 @@ h1 {
   color: white;
   margin-top: 150px;
   text-align: left;
+}
+
+h3 {
+  color: white;
 }
 
 h4 {
@@ -66,12 +80,12 @@ hr {
   color: white;
 }
 
-#login-btn{
+#login-btn {
   background-color: blueviolet;
   border-radius: 25px;
   color: white;
 }
-#signup-btn{
+#signup-btn {
   background-color: blueviolet;
   border-radius: 25px;
   color: white;
@@ -81,63 +95,96 @@ hr {
   color: white;
 }
 
-.login-C{
+.login-C {
   margin-top: 9rem !important;
   margin-left: 7rem !important;
 }
 
-.navbar-dash{
+.navbar-dash {
   background-color: blueviolet !important;
   height: 75px;
 }
 
+<<<<<<< HEAD
+=======
+.navbar-dash-toggler {
+  background: indigo !important;
+}
+>>>>>>> 799fdd0f43a2fc93c83976954ab4bc50580cb815
 
-.about-text{
+.about-text {
   color: white;
 }
 
-.bio-text{
+.bio-text {
   color: black;
 }
 
-.home-image1{
+.home-image1 {
   margin-top: 9rem !important;
-
 }
 
-.joinTitle{
+.joinTitle {
   color: white;
   text-align: left;
 }
 
-.joinCom{
+.joinCom {
   color: white;
   margin-top: 20px;
   text-align: left;
 }
 
-.desc-1{
+.desc-1 {
   color: white;
-  
 }
 
-.card-text{
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.hrbreak {
+  color: white;
+}
+
+.logonumbers {
+  display: inline;
+}
+
+.textCenter {
+  display: inline-block;
+}
+
+.footerText {
+  display: inline-block;
+}
+hr {
+  color: white;
+}
+
+footer {
+  margin-left: 160px;
+}
+
+.card-text {
   color: black;
 }
 
-
-.card-image-top{
+.card-image-top {
   max-height: 450px;
   max-width: 400px;
   border-radius: 25px;
 }
 
-.app-title{
+.app-title {
   color: rgb(169, 89, 244);
   margin-left: 35px;
 }
+<<<<<<< HEAD
 
 /* .navbar-nav{
   margin-bottom: 20px;
 } */
 
+=======
+>>>>>>> 799fdd0f43a2fc93c83976954ab4bc50580cb815
