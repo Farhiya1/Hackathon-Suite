@@ -1,45 +1,54 @@
+{{!-- Homepage 1st section with info about website and signup button --}}
 <div class="container">
   <div class="row">
     <div class="col">
       <h1>Hackathon Suite </h1>
-<h4>A bit of text about the Hackathon Suite and what we do, who it is for</h4>
-<br>
-<a href="/signup"><button class="homeSignUpBtn" style="width: 10rem">Sign Up</button></a>
+      <h4>A bit of text about the Hackathon Suite and what we do, who it is for</h4>
+      <br />
+      <a href="/signup"><button class="homeSignUpBtn" style="width: 10rem">Sign
+          Up</button></a>
     </div>
     <div class="col">
-      <div class="text-center home-image1 ">
-    <img src="/Image/login-image.jpg" alt="Login" style="width: 250px; height: 250px">
-    </div>
+      <div class="text-center home-image1">
+        <img
+          src="/Image/homepage1.png"
+          alt="Login"
+          style="width: 450px; height: 350px"
+        />
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-    <img src="/Image/login-image.jpg" alt="Login" style="width: 250px; height: 250px">
-    <h6 class="desc-1">{{title}}</h6>
-    </div>
-    <div class="col">
-     <img src="/Image/login-image.jpg" alt="Login" style="width: 250px; height: 250px">
-    </div>
-    <div class="col">
-       <h3 class="joinTitle">Join a project</h3>
-<h5 class="joinCom">How to join and what it means to be a part of a team, how the team is generated and that you can view you team members.  When the team is full, details are gievn to the host</h5>
+   <hr class="hrbreak"> </hr>
 <br>
- <a href="/projects"><button class="homeSignUpBtn text-center" style="width: 15rem">View Projects</button></a>
+<br>
+<br>
+<br>
+
+  
+<div class="col">
+      <h3 class="joinTitle">Join a project</h3>
+      <h5 class="joinCom">How to join and what it means to be a part of a team,
+        how the team is generated and that you can view you team members. When
+        the team is full, details are gievn to the host</h5>
+      <br />
+      <a href="/api/project"><button
+          class="homeSignUpBtn text-center"
+          style="width: 15rem"
+        >View Projects</button></a>
     </div>
   </div>
 </div>
+  
+  <br> 
+  <br>
+    {{#each projects}}
+    <div class="card mb-3 mb3" style="max-width: 500px;">
 
-{{!-- {
-    
-    
-    {!-- <div class="card mb-3"  style="max-width: 500px;">
-  {{#each projects}}
-    <article class="card">
-      <div class="card-header bg-light flex-row justify-space-between">
-  <div class="row g-0">
-      <p>XXXXXXXX</p>
+    <article class=" card">
+      <div class="card-header bg-light flex-row ">
+  <div class="card-group">
     <div class="col-md-4">
-       <img src="../public/Image/login-image.jpg" class="img-fluid rounded-start" alt="...">
+       <img src="/Image/login-image.jpg" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-8">
         <h2>
@@ -47,19 +56,64 @@
         </h2>
         <h5>Startup</h5><p>{{startup}}</p>
         <p>{{description}}</p>
-
         <div>
           Project starts on
-          {{start_date}}
+          {{format_date start_date}}
           until
-          {{end_date}}
+          {{format_date end_date}}
         </div>
       </div>
       <div class="card-body">
         {{body}}
-        <button type="button" class="project-button" value="{{id}}">Join
-          Project</button>
+      
       </div>
     </article>
-  {{/each}}
-</div> --}}
+ 
+</div> 
+ {{/each}} 
+
+ 
+ 
+
+<hr>
+<br>
+<br>
+<br>
+<div>
+<h3> How the <br> Hackathon Suite <br> works </h3>
+</div>
+<div></div>
+  <p class="text-white">This is all about how we actually work, how a startup can send a project in and the steps that happen after that</p>
+  </div>
+<div class="image-centering text-center" >
+ <div class="col logonumbers">
+      <img
+        src="/Image/1logo.png "
+        alt="Login"
+        style="width: 280px; height: 240px"
+      />  
+    </div>
+     <div class="col logonumbers ">
+      <img
+        src="/Image/2logo.png"
+        alt="Login"
+        style="width: 280px; height: 260px"
+      />
+       </div>
+    
+      <div class="col logonumbers ">
+      <img
+        src="/Image/3logo.png"
+        alt="Login"
+        style="width: 300px; height: 305px"
+      />
+       </div>
+</div>
+
+   <div class="text-center">
+     <div class="textCenter text-white" style="width: 250px; height: 250px"><p>Become a member</p></div>
+      <div class="textCenter text-white" style="width: 250px; height: 250px"><p>Join a project</p></div>
+       <div class="textCenter text-white" style="width: 250px; height: 250px"><p>Start coding</p></div>
+     
+     
+   </div> 
