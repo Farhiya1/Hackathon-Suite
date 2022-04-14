@@ -1,35 +1,64 @@
-body{
-    background-color: black !important;
-
-}
-.navbar{
-    background-color: black !important;
+body {
+  background-color: black !important;
 }
 
-.project-button{
-    background-color: blueviolet !important;
-    border-radius: 25px;
-    width: 270px;
-    height: 50px;
+.navbar {
+  background-color: blueviolet !important;
+  height: 75px;
+}
+
+.navbar-toggle .project-button {
+  background: indigo !important;
+}
+
+.project-button {
+  background-color: blueviolet !important;
+  border-radius: 25px;
+  width: 270px;
+  height: 50px;
 }
 
 .card {
-    margin: 0 auto; /* Added */
-    float: none; /* Added */
-    margin-bottom: 10px; /* Added */
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
 }
 
-.img-fluid{
-    border-radius: 25px;
+.img-fluid {
+  border-radius: 25px;
   background: black;
   padding: 20px;
   width: 270px;
   height: 200px;
 }
 
-.startup-name{
-    color: blueviolet;
+.startup-name {
+  color: blueviolet;
 }
 
+.card .homepage-cards {
+  display: flex;
+  background-color: blue;
+}
 
+h1 {
+  color: white;
+  margin-top: 150px;
+  text-align: left;
+}
 
+h4 {
+  color: white;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.homeSignUpBtn {
+  background-color: blueviolet;
+  color: white;
+  border-radius: 20px;
+}
+
+hr {
+  color: white;
+}
