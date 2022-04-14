@@ -25,6 +25,7 @@ router.post("/", (req, res) => {
     });
 });
 
+// login function
 router.post("/login", (req, res) => {
   User.findOne({
     where: {
@@ -36,6 +37,7 @@ router.post("/login", (req, res) => {
       return;
     }
 
+    // checks password is correct
     const validPassword = userDataDB.checkPassword(req.body.password);
 
     if (!validPassword) {
@@ -53,6 +55,7 @@ router.post("/login", (req, res) => {
   });
 });
 
+// ends the session and logs user out
 router.post("/logout", (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {

@@ -11,12 +11,9 @@ router.get("/", (req, res) => {
       const projects = projectDBData.map((project) =>
         project.get({ plain: true })
       );
-      // console.log(projects);
       res.render("homeprojects", { projects });
     });
-  // .catch((err) => {
-  //   res.status(500).json(err);
-  // });
+  
 });
 
 // Get single post

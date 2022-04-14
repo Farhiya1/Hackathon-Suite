@@ -1,3 +1,4 @@
+// required files
 const router = require("express").Router();
 const { Project, User, Team } = require("../models");
 const withAuth = require("../utils/auth");
@@ -14,23 +15,6 @@ router.get("/", withAuth, async (req, res) => {
     user,
   });
 
-  /* Project.findAll({
-    where: {
-      id: req.session.userId,
-    },
-  })
-    .then((postDBData) => {
-      const posts = postDBData.map((post) => post.get({ plain: true }));
-
-      res.render("all-posts-admin", {
-        layout: "dashboard",
-        posts,
-      });
-    })
-    .catch((err) => {
-      console.log(err);
-      res.redirect("login");
-    }); */
 });
 
 router.get("/new", withAuth, (req, res) => {

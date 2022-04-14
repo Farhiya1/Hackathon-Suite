@@ -1,8 +1,10 @@
+// required files
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
 class Project extends Model {}
 
+// contains data for projects
 Project.init(
   {
     id: {

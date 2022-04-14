@@ -1,3 +1,4 @@
+// required files
 const sequelize = require("../config/connection");
 const { User, Team, Project } = require("../models");
 
@@ -5,6 +6,7 @@ const userData = require("./user.json");
 const projectData = require("./projects.json");
 const teamsData = require("./teams.json");
 
+// seed database function, users team and projects
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
