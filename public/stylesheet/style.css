@@ -123,3 +123,20 @@ hr {
   color: white;
   
 }
+
+.card-text{
+  color: black;
+}
+
+
+.card-image-top{
+  max-height: 450px;
+  max-width: 400px;
+  border-radius: 25px;
+}
+
+.app-title{
+  color: rgb(169, 89, 244);
+  margin-left: 35px;
+}
+
