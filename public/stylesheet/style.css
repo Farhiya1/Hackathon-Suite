@@ -102,3 +102,24 @@ hr {
 .bio-text{
   color: black;
 }
+
+.home-image1{
+  margin-top: 9rem !important;
+
+}
+
+.joinTitle{
+  color: white;
+  text-align: left;
+}
+
+.joinCom{
+  color: white;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.desc-1{
+  color: white;
+  
+}
