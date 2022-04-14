@@ -85,3 +85,12 @@ hr {
   margin-top: 9rem !important;
   margin-left: 7rem !important;
 }
+
+.navbar-dash{
+  background-color: blueviolet !important;
+  height: 75px;
+}
+
+.navbar-dash-toggler{
+  background: indigo !important;
+}
