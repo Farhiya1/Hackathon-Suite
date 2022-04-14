@@ -17,6 +17,9 @@ body {
   width: 270px;
   height: 50px;
 }
+.dash-proj{
+  margin-top: 9rem !important;
+}
 
 .card {
   margin: 0 auto; /* Added */
