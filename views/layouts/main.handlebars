@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DEV Hackathon</title>
+    <title>Hackathon Suite</title>
+
+    {{! Stylesheet links }}
     <link
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap"
       rel="stylesheet"
@@ -15,9 +17,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/stylesheet/style.css" />
-
   </head>
 
+  {{! Navbar section }}
   <body class="flex-column min-80-vh background">
     <nav
       class="navbar navbar-expand-lg navbar-light bg-light shadow-lg p-3 mb-5 bg-white fixed-top"
@@ -63,9 +65,9 @@
     </nav>
 
     <header class="hero text-center">
-      {{! <h1 class="app-title"><a href="/">Tech Blog</a></h1> }}
     </header>
 
+    {{! Renders body text to the page }}
     <main class="col-auto">
       {{{body}}}
     </main>
@@ -91,6 +93,7 @@
     </footer>
   </body>
 
+  {{! Javascript links }}
   <script src="/javascript/logout.js"></script>
   <script src="/javascript/project.js"></script>
   <script src="/javascript/homeprojects.js"></script>

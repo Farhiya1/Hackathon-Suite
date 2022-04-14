@@ -1,5 +1,4 @@
 <html lang="en">
-
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,17 +7,17 @@
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap"
       rel="stylesheet"
     />
+    {{!-- Stylesheet links for bootstrap and CSS --}}
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="/stylesheet/style.css" />
-
   </head>
 
+  {{!-- Navbar section --}}
   <body class="flex-column min-80-vh">
       <nav
       class="navbar-dash navbar-expand-lg navbar-light bg-light shadow-lg p-3 mb-5 bg-white fixed-top"
@@ -62,37 +61,27 @@
         </div>
       </div>
     </nav>
+
+    {{!-- Header with title --}}
     <header class="hero">
-      <h1 class="app-title .text-black"><a href="/dashboard">Dashboard</a></h1>
+      <h1 class="app-title .text-black">Dashboard</h1>
     </header>
 
-    {{!-- <div class="monster">
-      <img src="/Image/pink-monster.png" class="img-fluid rounded-start" alt="...">
-    </div> --}}
-
-    {{!-- <main class="col-auto">
-      {{{body}}} --}}
-      {{!-- <h2 class="bio">{{bio}}</h2>
-    </main> --}}
-
+    {{!-- Renders body to the display card --}}
      <main class="about-text bio-text col-auto">
-      {{{body}}}
-    {{!-- <div class="card">
-    <img src="/Image/pink-monster.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">About</h5>
+      <div class="card-dash">
+      <div class="card-body">
+        {{{body}}}
       <p class="card-text"></p>
-      
-    </div> --}}
-
-    {{!-- <footer class="footer flex-row justify-center">
-      <a href="/dashboard/new"> New Post</a>
-    </footer> --}}
+      <main class="col-auto">
   </body>
 
+  {{!-- Javascript links --}}
   <script src="/javascript/logout.js"></script>
   <script src="/javascript/edit.js"></script>
   <script src="/javascript/delete.js"></script>
   <script src="/javascript/project.js"></script>
+  <script src="/javascript/homeprojects.js"></script>
+
 
 </html>

@@ -1,32 +1,7 @@
-{{!-- <div class="posts">
-  {{#each projects}}
-    <article class="card">
-      <div class="card-header bg-light flex-row justify-space-between">
-        <h2>
-          <a href="/home-routes/{{id}}">{{title}}</a>
-        </h2>
-        <h5>Startup</h5><p>{{startup}}</p>
-        <p>{{description}}</p>
+{{!-- Link to stylesheet --}}
+<link rel="stylesheet" href="/stylesheet/style.css" type="css"/>
 
-        <div>
-          Project starts on
-          {{start_date}}
-          until
-          {{end_date}}
-        </div>
-      </div>
-      <div class="card-body">
-        {{body}}
-        <button type="button" class="project-button" value="{{id}}">Join
-          Project</button>
-      </div>
-    </article>
-  {{/each}}
-</div> --}}
-
-
-<link rel="stylesheet" href="/stylesheet/dashboard-projects.css" type="css"/>
-
+{{!-- Cards for projects, #each loops over and renders all projects in database to page --}}
 <div class="card mb-3 dash-proj"  style="max-width: 940px;">
   {{#each projects}}
     <article class="card">
@@ -39,12 +14,13 @@
         <h2 class="proj-title">
           <a href="/home-routes/{{id}}">{{title}}</a>
         </h2>
+
+        {{!-- Renders description, team and dates to project cards --}}
         <h5>Startup</h5><h4 class="startup-name">{{startup}}</h4>
         <p>{{description}}</p>
         <p>{{Team.teamName}}</p>
         <div>
           Project starts on
-    
           {{format_date start_date}}
           until
           {{format_date end_date}}

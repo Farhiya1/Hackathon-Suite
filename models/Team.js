@@ -1,8 +1,10 @@
+// required files
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
 class Team extends Model {}
 
+// contains models and datatypes for teams
 Team.init(
   {
     id: {
