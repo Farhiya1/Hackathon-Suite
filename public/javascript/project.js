@@ -1,3 +1,4 @@
+// Join project button functionality for the user to join the project they click on.
 const joinTeamButtons = document.querySelectorAll(".project-button");
 
 joinTeamButtons.forEach((btn) => btn.addEventListener("click", joinProject));
