@@ -74,6 +74,9 @@ h4 {
   background-color: blueviolet;
   color: white;
   border-radius: 20px;
+  border-bottom: 20px;
+  border-left: 30px;
+  border-right-width: 0ch;
 }
 
 hr {
@@ -161,8 +164,13 @@ hr {
 
 footer {
   margin-left: 160px;
+  position: fixed;
+  bottom: 0;
 }
 
+.site-footer {
+  display: none;
+}
 .card-text {
   color: black;
 }
