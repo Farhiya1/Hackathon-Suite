@@ -1,35 +1,52 @@
 <div class="row text-center m-2 login-C" style="height: 25rem">
-<div class="col-sm-6 card-img">
-<img src="/Image/login-image.jpg" alt="Login" style="width: 500px; height: 500px">
-</div>
-
-{{!-- Login form --}}
-<div class="card-login" style="width: 25rem";>
-  <div class="card-header">
-    <h5 class="text-center">Login</h5>
-    <h8 class="text-center">Sign in to continue</h8>
+  <div class="col-sm-6 card-img">
+    <img
+      src="/Image/login-image.jpg"
+      alt="Login"
+      style="width: 400px; height: 400px"
+    />
   </div>
-  <form id="login-form" class="card-body">
-    <div>
-      <div class="text-center">
-      <label for="username-input-login" style="width: 18rem" class="text-left">Please enter username</label>
-      </div>
-      <input type="text" id="username-input-login" style="width: 18rem"/>
+
+  {{! Login form }}
+  <div class="card-login" style="width: 25rem" ;>
+    <div class="card-header">
+      <h5 class="text-center">Login</h5>
+      <h8 class="text-center">Sign in to continue</h8>
     </div>
-    <br>
-    <div>
-      <div class="text-center">
-      <label for="password-input-login" style="width: 18rem" class="text-left">Please enter password - 8 characters</label>
+    <form id="login-form" class="card-body">
+      <div>
+        <div class="text-center">
+          <label
+            for="username-input-login"
+            style="width: 18rem"
+            class="text-left"
+          >Please enter username</label>
+        </div>
+        <input type="text" id="username-input-login" style="width: 18rem" />
       </div>
-      <input type="password" id="password-input-login" style="width: 18rem" />
-    </div>
-    <br>
-    <button type="submit" id="login-btn" class="btn btn-danger" style="width: 15rem">Login!</button>
-    <br>
-    <a type="button" href="/signup">Sign up </a>
-  </form>
-</div>
+      <br />
+      <div>
+        <div class="text-center">
+          <label
+            for="password-input-login"
+            style="width: 18rem"
+            class="text-left"
+          >Please enter password - 8 characters</label>
+        </div>
+        <input type="password" id="password-input-login" style="width: 18rem" />
+      </div>
+      <br />
+      <button
+        type="submit"
+        id="login-btn"
+        class="btn btn-danger"
+        style="width: 15rem"
+      >Login!</button>
+      <br />
+      <a type="button" href="/signup">Sign up </a>
+    </form>
+  </div>
 </div>
 
-{{!-- Javascript link --}}
+{{! Javascript link }}
 <script src="/javascript/login.js"></script>
