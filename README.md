@@ -42,7 +42,7 @@ Superhereos
 
 ## Links to repository and deployed app
 
-Github - https://github.com/Farhiya1/Project2
+Github - https://github.com/Farhiya1/Hackathon-Suite
 Deployed page - https://salty-woodland-88670.herokuapp.com/
 
 ## Github repositories
