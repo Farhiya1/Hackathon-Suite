@@ -12,13 +12,13 @@
       </div>
       <div class="col-md-8">
         <h2 class="proj-title">
-          <a href="/home-routes/{{id}}">{{title}}</a>
+          {{id}}: {{title}}
         </h2>
 
         {{!-- Renders description, team and dates to project cards --}}
         <h5>Startup</h5><h4 class="startup-name">{{startup}}</h4>
         <p>{{description}}</p>
-        <p>{{Team.teamName}}</p>
+        <p>Team Name: {{Team.teamName}}</p>
         <div>
           Project starts on
           {{format_date start_date}}
