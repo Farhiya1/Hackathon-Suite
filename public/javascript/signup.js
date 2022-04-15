@@ -1,3 +1,4 @@
+// User signup form handler sending through new user info to database through a click of  abutton.
 const signupFormHandler = async function (event) {
   event.preventDefault();
 

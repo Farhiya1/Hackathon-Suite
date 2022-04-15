@@ -1,3 +1,4 @@
+// Logout button calling API in routes
 function logout() {
   fetch("/api/user/logout", {
     method: "post",
