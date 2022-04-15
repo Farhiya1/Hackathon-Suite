@@ -44,6 +44,7 @@ Superhereos
 
 Github - https://github.com/Farhiya1/Hackathon-Suite
 Deployed page - https://salty-woodland-88670.herokuapp.com/
+Presentation Link- https://www.canva.com/design/DAE98ZzAVrM/74_AFB8uWVjeKFVH6aPWqQ/edit?utm_content=DAE98ZzAVrM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 ## Github repositories
 
